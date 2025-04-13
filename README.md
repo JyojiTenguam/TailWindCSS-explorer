@@ -31,9 +31,10 @@ npx tailwindcss -i ./src/input.css -o ./dist/output.css --watch
 
 ## 💡 O que estou testando
 
-- Tamanhos de fonte (`text-xs` até `text-9xl`)
-- Cores (`text-red-500`, `bg-gray-100`, etc.)
-- Combinações de utilitários para entender melhor o sistema do Tailwind
+- 🔠 **Tamanhos de fonte** (`text-xs` até `text-9xl`)
+- 🎨 **Cores** (`text-red-500`, `bg-gray-100`, etc.)
+- 📏 **Espaçamento** (`p-4`, `m-7`, `space-y-4`, etc.)
+- 🧩 **Combinações de utilitários** para entender melhor o sistema do Tailwind
 
 ## 📁 Estrutura de pastas
 
