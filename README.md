@@ -34,6 +34,8 @@ npx tailwindcss -i ./src/input.css -o ./dist/output.css --watch
 - 🔠 **Tamanhos de fonte** (`text-xs` até `text-9xl`)
 - 🎨 **Cores** (`text-red-500`, `bg-gray-100`, etc.)
 - 📏 **Espaçamento** (`p-4`, `m-7`, `space-y-4`, etc.)
+- 🟦 Bordas (`border-2`, `border-yellow-400`, `rounded-t-lg`, etc.)
+- 🖱️ Botão estilizado com `ring`, `bg-blue-400`, `text-white`
 - 🧩 **Combinações de utilitários** para entender melhor o sistema do Tailwind
 
 ## 📁 Estrutura de pastas
