@@ -50,6 +50,9 @@ npx tailwindcss -i ./src/input.css -o ./dist/output.css --watch
 - 🧰 **Classes customizadas com `@apply`**
   - 🛠️ Criando classes utilitárias personalizadas com `@layer utilities`
   - 💎 Exemplo: `.laravue` com `bg-brand-100` e `font-bold`
+- 🗂️ **Componente Card**
+  - 📦 Estrutura com `shadow-md`, `rounded-lg`, `overflow-hidden`
+  - 🧱 Layout com `container`, `px`, `py` e cores de fundo variando conforme o tema
 - 🧩 **Combinações de utilitários** para entender melhor o sistema do Tailwind
 
 ## 📁 Estrutura de pastas
