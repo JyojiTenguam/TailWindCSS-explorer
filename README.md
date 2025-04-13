@@ -44,6 +44,7 @@ npx tailwindcss -i ./src/input.css -o ./dist/output.css --watch
   - 📊 Testando diferentes divisões de coluna e como os elementos se adaptam
 - 📱 **Responsividade** (`sm:`, `md:`, `lg:`, `xl:`, `2xl:`)
 - 🌀 **Estados interativos** (`hover:`, `focus:`, `group-hover:`)
+- 🎨 Cores personalizadas via `input.css` (`bg-brand-100`, `text-brand-200`, etc.)
 - 🧩 **Combinações de utilitários** para entender melhor o sistema do Tailwind
 
 ## 📁 Estrutura de pastas

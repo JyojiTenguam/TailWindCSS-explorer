@@ -68,9 +68,11 @@
     --text-9xl--line-height: 1;
     --font-weight-bold: 700;
     --radius-lg: 0.5rem;
-    --radius-2xl: 1rem;
     --default-font-family: var(--font-sans);
     --default-mono-font-family: var(--font-mono);
+    --color-brand-100: #c542f5;
+    --color-brand-200: #9e35c4;
+    --color-brand-300: #6d2487;
   }
 }
 @layer base {
@@ -219,9 +221,6 @@
   }
 }
 @layer utilities {
-  .col-span-1 {
-    grid-column: span 1 / span 1;
-  }
   .col-span-2 {
     grid-column: span 2 / span 2;
   }
@@ -243,23 +242,11 @@
   .grid {
     display: grid;
   }
-  .table {
-    display: table;
-  }
   .h-24 {
     height: calc(var(--spacing) * 24);
   }
   .h-36 {
     height: calc(var(--spacing) * 36);
-  }
-  .h-52 {
-    height: calc(var(--spacing) * 52);
-  }
-  .h-64 {
-    height: calc(var(--spacing) * 64);
-  }
-  .h-90 {
-    height: calc(var(--spacing) * 90);
   }
   .h-100 {
     height: calc(var(--spacing) * 100);
@@ -267,32 +254,14 @@
   .h-screen {
     height: 100vh;
   }
-  .w-1 {
-    width: calc(var(--spacing) * 1);
-  }
-  .w-1\/2 {
-    width: calc(1/2 * 100%);
-  }
-  .w-10 {
-    width: calc(var(--spacing) * 10);
-  }
   .w-24 {
     width: calc(var(--spacing) * 24);
-  }
-  .w-60 {
-    width: calc(var(--spacing) * 60);
   }
   .w-72 {
     width: calc(var(--spacing) * 72);
   }
-  .w-200 {
-    width: calc(var(--spacing) * 200);
-  }
   .w-screen {
     width: 100vw;
-  }
-  .min-w-24 {
-    min-width: calc(var(--spacing) * 24);
   }
   .flex-shrink {
     flex-shrink: 1;
@@ -303,17 +272,8 @@
   .flex-grow {
     flex-grow: 1;
   }
-  .border-collapse {
-    border-collapse: collapse;
-  }
-  .resize {
-    resize: both;
-  }
   .grid-cols-3 {
     grid-template-columns: repeat(3, minmax(0, 1fr));
-  }
-  .flex-col {
-    flex-direction: column;
   }
   .items-center {
     align-items: center;
@@ -341,9 +301,6 @@
   .rounded {
     border-radius: 0.25rem;
   }
-  .rounded-2xl {
-    border-radius: var(--radius-2xl);
-  }
   .rounded-t-lg {
     border-top-left-radius: var(--radius-lg);
     border-top-right-radius: var(--radius-lg);
@@ -356,26 +313,12 @@
     border-style: var(--tw-border-style);
     border-width: 2px;
   }
-  .border-4 {
-    border-style: var(--tw-border-style);
-    border-width: 4px;
-  }
-  .border-r-3 {
-    border-right-style: var(--tw-border-style);
-    border-right-width: 3px;
-  }
   .border-l-2 {
     border-left-style: var(--tw-border-style);
     border-left-width: 2px;
   }
-  .border-red-400 {
-    border-color: var(--color-red-400);
-  }
-  .border-red-400\/50 {
-    border-color: color-mix(in srgb, oklch(70.4% 0.191 22.216) 50%, transparent);
-    @supports (color: color-mix(in lab, red, red)) {
-      border-color: color-mix(in oklab, var(--color-red-400) 50%, transparent);
-    }
+  .border-brand-300 {
+    border-color: var(--color-brand-300);
   }
   .border-red-400\/70 {
     border-color: color-mix(in srgb, oklch(70.4% 0.191 22.216) 70%, transparent);
@@ -383,17 +326,8 @@
       border-color: color-mix(in oklab, var(--color-red-400) 70%, transparent);
     }
   }
-  .border-red-400\/90 {
-    border-color: color-mix(in srgb, oklch(70.4% 0.191 22.216) 90%, transparent);
-    @supports (color: color-mix(in lab, red, red)) {
-      border-color: color-mix(in oklab, var(--color-red-400) 90%, transparent);
-    }
-  }
   .border-yellow-400 {
     border-color: var(--color-yellow-400);
-  }
-  .bg-blue-200 {
-    background-color: var(--color-blue-200);
   }
   .bg-blue-400 {
     background-color: var(--color-blue-400);
@@ -401,11 +335,8 @@
   .bg-blue-900 {
     background-color: var(--color-blue-900);
   }
-  .bg-blue-900\/20 {
-    background-color: color-mix(in srgb, oklch(37.9% 0.146 265.522) 20%, transparent);
-    @supports (color: color-mix(in lab, red, red)) {
-      background-color: color-mix(in oklab, var(--color-blue-900) 20%, transparent);
-    }
+  .bg-brand-100 {
+    background-color: var(--color-brand-100);
   }
   .bg-gray-100 {
     background-color: var(--color-gray-100);
@@ -415,13 +346,6 @@
   }
   .bg-gray-600 {
     background-color: var(--color-gray-600);
-  }
-  .bg-linear-65 {
-    --tw-gradient-position: 65deg;
-    @supports (background-image: linear-gradient(in lab, red, red)) {
-      --tw-gradient-position: 65deg in oklab;
-    }
-    background-image: linear-gradient(var(--tw-gradient-stops));
   }
   .bg-gradient-to-bl {
     --tw-gradient-position: to bottom left in oklab;
@@ -446,9 +370,6 @@
   }
   .py-2 {
     padding-block: calc(var(--spacing) * 2);
-  }
-  .pb-4 {
-    padding-bottom: calc(var(--spacing) * 4);
   }
   .text-2xl {
     font-size: var(--text-2xl);
@@ -515,6 +436,9 @@
   .text-blue-400 {
     color: var(--color-blue-400);
   }
+  .text-brand-200 {
+    color: var(--color-brand-200);
+  }
   .text-cyan-700 {
     color: var(--color-cyan-700);
   }
@@ -554,12 +478,6 @@
   .text-yellow-400 {
     color: var(--color-yellow-400);
   }
-  .underline {
-    text-decoration-line: underline;
-  }
-  .opacity-5 {
-    opacity: 5%;
-  }
   .ring {
     --tw-ring-shadow: var(--tw-ring-inset,) 0 0 0 calc(1px + var(--tw-ring-offset-width)) var(--tw-ring-color, currentcolor);
     box-shadow: var(--tw-inset-shadow), var(--tw-inset-ring-shadow), var(--tw-ring-offset-shadow), var(--tw-ring-shadow), var(--tw-shadow);
@@ -571,26 +489,8 @@
   .ring-red-200 {
     --tw-ring-color: var(--color-red-200);
   }
-  .outline {
-    outline-style: var(--tw-outline-style);
-    outline-width: 1px;
-  }
   .group-hover\:text-blue-300 {
     &:is(:where(.group):hover *) {
-      @media (hover: hover) {
-        color: var(--color-blue-300);
-      }
-    }
-  }
-  .hover\:bg-yellow-500 {
-    &:hover {
-      @media (hover: hover) {
-        background-color: var(--color-yellow-500);
-      }
-    }
-  }
-  .hover\:text-blue-300 {
-    &:hover {
       @media (hover: hover) {
         color: var(--color-blue-300);
       }
@@ -620,12 +520,6 @@
   .focus\:text-red-300 {
     &:focus {
       color: var(--color-red-300);
-    }
-  }
-  .focus\:ring-2 {
-    &:focus {
-      --tw-ring-shadow: var(--tw-ring-inset,) 0 0 0 calc(2px + var(--tw-ring-offset-width)) var(--tw-ring-color, currentcolor);
-      box-shadow: var(--tw-inset-shadow), var(--tw-inset-ring-shadow), var(--tw-ring-offset-shadow), var(--tw-ring-shadow), var(--tw-shadow);
     }
   }
   .sm\:bg-red-50 {
@@ -798,11 +692,6 @@
   inherits: false;
   initial-value: 0 0 #0000;
 }
-@property --tw-outline-style {
-  syntax: "*";
-  inherits: false;
-  initial-value: solid;
-}
 @layer properties {
   @supports ((-webkit-hyphens: none) and (not (margin-trim: inline))) or ((-moz-orient: inline) and (not (color:rgb(from red r g b)))) {
     *, ::before, ::after, ::backdrop {
@@ -833,7 +722,6 @@
       --tw-ring-offset-width: 0px;
       --tw-ring-offset-color: #fff;
       --tw-ring-offset-shadow: 0 0 #0000;
-      --tw-outline-style: solid;
     }
   }
 }
