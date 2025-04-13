@@ -43,6 +43,7 @@ npx tailwindcss -i ./src/input.css -o ./dist/output.css --watch
 - 🧮 **Grid layout** (`grid`, `grid-cols-*`, `gap-*`, `col-span-*`)
   - 📊 Testando diferentes divisões de coluna e como os elementos se adaptam
 - 📱 **Responsividade** (`sm:`, `md:`, `lg:`, `xl:`, `2xl:`)
+- 🌀 **Estados interativos** (`hover:`, `focus:`, `group-hover:`)
 - 🧩 **Combinações de utilitários** para entender melhor o sistema do Tailwind
 
 ## 📁 Estrutura de pastas
