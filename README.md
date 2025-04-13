@@ -38,6 +38,9 @@ npx tailwindcss -i ./src/input.css -o ./dist/output.css --watch
 - 🖱️ Botão estilizado com `ring`, `bg-blue-400`, `text-white`
 - 🌈 Backgrounds e gradientes (`bg-*`, `bg-gradient-to-*`, `from-*`, `to-*`)
 - 📐 Largura e altura (`w-screen`, `h-screen`, etc.)
+- 🧱 **Flexbox** e controle de layout (`flex`, `justify-*`, `items-*`, `space-x-*`)
+  - 🔄 Comportamento de crescimento (`flex-grow`, `flex-shrink`, etc.)
+
 - 🧩 **Combinações de utilitários** para entender melhor o sistema do Tailwind
 
 ## 📁 Estrutura de pastas
