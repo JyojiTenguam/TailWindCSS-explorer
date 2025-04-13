@@ -47,6 +47,9 @@ npx tailwindcss -i ./src/input.css -o ./dist/output.css --watch
 - 🎨 Cores personalizadas via `input.css` (`bg-brand-100`, `text-brand-200`, etc.)
 - 🌑 **Modo Escuro** (`dark`)
   - 🌒 **Utilização do modo escuro com Tailwind CSS** aplicando a classe `.dark` para alterar a aparência de elementos.
+- 🧰 **Classes customizadas com `@apply`**
+  - 🛠️ Criando classes utilitárias personalizadas com `@layer utilities`
+  - 💎 Exemplo: `.laravue` com `bg-brand-100` e `font-bold`
 - 🧩 **Combinações de utilitários** para entender melhor o sistema do Tailwind
 
 ## 📁 Estrutura de pastas
