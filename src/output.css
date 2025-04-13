@@ -8,7 +8,6 @@
     --font-mono: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono",
       "Courier New", monospace;
     --color-red-500: oklch(63.7% 0.237 25.331);
-    --color-amber-400: oklch(82.8% 0.189 84.429);
     --color-amber-900: oklch(41.4% 0.112 45.904);
     --color-yellow-400: oklch(85.2% 0.199 91.936);
     --color-green-200: oklch(92.5% 0.084 155.995);
@@ -22,6 +21,7 @@
     --color-gray-500: oklch(55.1% 0.027 264.364);
     --color-stone-500: oklch(55.3% 0.013 58.071);
     --color-black: #000;
+    --spacing: 0.25rem;
     --text-xs: 0.75rem;
     --text-xs--line-height: calc(1 / 0.75);
     --text-sm: 0.875rem;
@@ -197,6 +197,12 @@
   }
 }
 @layer utilities {
+  .m-4 {
+    margin: calc(var(--spacing) * 4);
+  }
+  .m-7 {
+    margin: calc(var(--spacing) * 7);
+  }
   .table {
     display: table;
   }
@@ -206,12 +212,32 @@
   .resize {
     resize: both;
   }
+  .space-y-4 {
+    :where(& > :not(:last-child)) {
+      --tw-space-y-reverse: 0;
+      margin-block-start: calc(calc(var(--spacing) * 4) * var(--tw-space-y-reverse));
+      margin-block-end: calc(calc(var(--spacing) * 4) * calc(1 - var(--tw-space-y-reverse)));
+    }
+  }
+  .space-x-4 {
+    :where(& > :not(:last-child)) {
+      --tw-space-x-reverse: 0;
+      margin-inline-start: calc(calc(var(--spacing) * 4) * var(--tw-space-x-reverse));
+      margin-inline-end: calc(calc(var(--spacing) * 4) * calc(1 - var(--tw-space-x-reverse)));
+    }
+  }
   .border {
     border-style: var(--tw-border-style);
     border-width: 1px;
   }
   .bg-gray-100 {
     background-color: var(--color-gray-100);
+  }
+  .p-4 {
+    padding: calc(var(--spacing) * 4);
+  }
+  .pb-4 {
+    padding-bottom: calc(var(--spacing) * 4);
   }
   .text-2xl {
     font-size: var(--text-2xl);
@@ -261,10 +287,6 @@
     font-size: var(--text-xs);
     line-height: var(--tw-leading, var(--text-xs--line-height));
   }
-  .font-bold {
-    --tw-font-weight: var(--font-weight-bold);
-    font-weight: var(--font-weight-bold);
-  }
   .text-amber-900 {
     color: var(--color-amber-900);
   }
@@ -312,14 +334,20 @@
     outline-width: 1px;
   }
 }
+@property --tw-space-y-reverse {
+  syntax: "*";
+  inherits: false;
+  initial-value: 0;
+}
+@property --tw-space-x-reverse {
+  syntax: "*";
+  inherits: false;
+  initial-value: 0;
+}
 @property --tw-border-style {
   syntax: "*";
   inherits: false;
   initial-value: solid;
-}
-@property --tw-font-weight {
-  syntax: "*";
-  inherits: false;
 }
 @property --tw-outline-style {
   syntax: "*";
@@ -329,8 +357,9 @@
 @layer properties {
   @supports ((-webkit-hyphens: none) and (not (margin-trim: inline))) or ((-moz-orient: inline) and (not (color:rgb(from red r g b)))) {
     *, ::before, ::after, ::backdrop {
+      --tw-space-y-reverse: 0;
+      --tw-space-x-reverse: 0;
       --tw-border-style: solid;
-      --tw-font-weight: initial;
       --tw-outline-style: solid;
     }
   }
