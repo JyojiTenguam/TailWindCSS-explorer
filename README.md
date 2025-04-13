@@ -37,6 +37,7 @@ npx tailwindcss -i ./src/input.css -o ./dist/output.css --watch
 - 🟦 Bordas (`border-2`, `border-yellow-400`, `rounded-t-lg`, etc.)
 - 🖱️ Botão estilizado com `ring`, `bg-blue-400`, `text-white`
 - 🌈 Backgrounds e gradientes (`bg-*`, `bg-gradient-to-*`, `from-*`, `to-*`)
+- 📐 Largura e altura (`w-screen`, `h-screen`, etc.)
 - 🧩 **Combinações de utilitários** para entender melhor o sistema do Tailwind
 
 ## 📁 Estrutura de pastas
