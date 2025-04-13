@@ -45,18 +45,22 @@ npx tailwindcss -i ./src/input.css -o ./dist/output.css --watch
 - 📱 **Responsividade** (`sm:`, `md:`, `lg:`, `xl:`, `2xl:`)
 - 🌀 **Estados interativos** (`hover:`, `focus:`, `group-hover:`)
 - 🎨 Cores personalizadas via `input.css` (`bg-brand-100`, `text-brand-200`, etc.)
+- 🌑 **Modo Escuro** (`dark`)
+  - 🌒 **Utilização do modo escuro com Tailwind CSS** aplicando a classe `.dark` para alterar a aparência de elementos.
 - 🧩 **Combinações de utilitários** para entender melhor o sistema do Tailwind
 
 ## 📁 Estrutura de pastas
 
 ```
 projeto/
-├── dist/
-│   └── output.css
 ├── src/
-│   └── input.css
-├── index.html
-└── tailwind.config.js
+│   ├── index.html                # Página HTML principal
+│   ├── input.css                 # Arquivo de entrada do Tailwind
+│   └── output.css                # Arquivo gerado com os estilos compilados
+├── .gitignore                    # Arquivos e pastas ignoradas pelo Git
+├── package-lock.json            # Controle de versões exatas das dependências
+├── package.json                 # Configurações do projeto e dependências
+└── README.md                    # Documentação do projeto
 ```
 
 ---
