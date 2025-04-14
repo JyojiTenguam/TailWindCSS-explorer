@@ -62,6 +62,8 @@ npx tailwindcss -i ./src/input.css -o ./dist/output.css --watch
   - 🧩 Variações de padding e tamanhos de texto (`text-sm`, `text-base`, `text-lg`)
   - 🎯 Foco estilizado com `focus:border-blue-500`, `focus:ring-2`
   - 🪄 Transições suaves com `transition`, `delay-150`, `duration-300`, `ease-in-out`
+- 📂 **Componente Dropdown**
+  - 📌 Botão com ícone SVG que revela menu de links
 - 🧩 **Combinações de utilitários** para entender melhor o sistema do Tailwind
 
 ## 📁 Estrutura de pastas
