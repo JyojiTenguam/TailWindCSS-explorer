@@ -58,6 +58,10 @@ npx tailwindcss -i ./src/input.css -o ./dist/output.css --watch
   - 🎨 Cores diferentes para status (`bg-green-100`, `bg-yellow-100`, `bg-red-100`)
   - 🧢 Variação de formato (`rounded-md` e `rounded-full`)
   - ✍️ Tipografia leve e compacta (`text-sm`, `font-medium`, `inline-flex`)
+- 🔤 **Componente Input**
+  - 🧩 Variações de padding e tamanhos de texto (`text-sm`, `text-base`, `text-lg`)
+  - 🎯 Foco estilizado com `focus:border-blue-500`, `focus:ring-2`
+  - 🪄 Transições suaves com `transition`, `delay-150`, `duration-300`, `ease-in-out`
 - 🧩 **Combinações de utilitários** para entender melhor o sistema do Tailwind
 
 ## 📁 Estrutura de pastas
