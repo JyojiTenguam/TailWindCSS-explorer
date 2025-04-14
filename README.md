@@ -1,5 +1,7 @@
 # TailwindCSS Explorer
 
+<img src="https://getlogovector.com/wp-content/uploads/2021/01/tailwind-css-logo-vector.png" />
+
 Este projeto é um ambiente de experimentação com o [Tailwind CSS](https://tailwindcss.com/). Aqui, estou explorando classes utilitárias de fonte, cor, espaçamento e outros recursos oferecidos pelo framework.
 
 ## 🛠 Tecnologias utilizadas
