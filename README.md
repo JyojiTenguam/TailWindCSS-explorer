@@ -54,6 +54,10 @@ npx tailwindcss -i ./src/input.css -o ./dist/output.css --watch
   - 📦 Estrutura com `shadow-md`, `rounded-lg`, `overflow-hidden`
   - 🧱 Layout com `container`, `px`, `py` e cores de fundo variando conforme o tema
 - 🔘 **Componente Button**
+- 🏷️ **Componente Badge**
+  - 🎨 Cores diferentes para status (`bg-green-100`, `bg-yellow-100`, `bg-red-100`)
+  - 🧢 Variação de formato (`rounded-md` e `rounded-full`)
+  - ✍️ Tipografia leve e compacta (`text-sm`, `font-medium`, `inline-flex`)
 - 🧩 **Combinações de utilitários** para entender melhor o sistema do Tailwind
 
 ## 📁 Estrutura de pastas
